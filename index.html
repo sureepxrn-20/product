@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uni shop</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <!-- Link icon CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" 
+  />
+  <!-- Link Swiper's CSS -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"> Uni shop</a>
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#now">Now Arrival</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">contact</a></li>
+            
+
+        </ul>
+
+        <!---icons-->
+        <div class="header-icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-search' id="search-icon"></i>
+            <i class='bx bx-cart' id="cart-icon"></i>
+            <i class='bx bx-user-circle' id="user-icon"></i>
+        </div>
+        <!--search-box--->
+        <div class="search-box">
+            <input type="search" placeholder="Search Here...">
+        </div>
+
+    
+    <main>
+        <div class="cart">
+            <!-- box1 -->
+                <div class="box">
+                    <img src="img/1.jpg" alt="">
+                    <div class="text">
+                        <h3>$2,690</h3>
+                        <span>Stussy</span>
+                        <span>Basic Stussy T-Shirt Black (SS23)</span>
+                    </div>
+                    <i class='bx bxs-trash'></i>
+                </div>
+    
+            <!-- box2 -->
+                <div class="box">
+                    <img src="img/2.jpg" alt="">
+                    <div class="text">
+                        <h3>$19,000</h3>
+                        <span>Stussy Thailand Bangkok Chapter 2023  </span>
+                    </div>
+                    <i class='bx bxs-trash'></i>
+                </div>
+                <div class="cart-summary">
+                    <h2>Total: $21,690</h2>
+                    <a href="#" class="btn">Checkout</a>
+                </div>
+        
+        </div>
+        <!--user-->
+        <div class="user">
+            <h2>Login Now</h2>
+            <input type="email" placeholder="Your Email...">
+            <input type="password" name="" id="" placeholder="Password">
+            <input type="submit" value="Login" class="login-btn">
+            <p>Forget Password? <a href="#">Reset Now</a></p>
+            <p>Don't have an account? <a href="#">Create One</a></p>
+        </div>
+ 
+    </header>
+    <!--HOME-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Welcome to Uni Shop</h1>
+        <div class="home-img">
+            <img src="img/cat7.png" alt="">
+        </div>
+    </section>
+<!-- New Arrival -->
+<section class="new" id="now">
+    <div class="heading">
+        <h1>New Collection</h1>
+    </div>
+
+    <div class="swiper new-arrival">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="img/3.jpg" alt="4">
+                <div class="content"></div>
+   
+            </div>
+            <div class="swiper-slide box">
+                <img src="img/4.jpg" alt="5">
+                <div class="content"></div>
+                
+            </div>
+            <div class="swiper-slide box">
+                <img src="img/7.jpg" alt="6">
+                <div class="content"></div>
+              
+            </div>
+            <div class="swiper-slide box">
+                <img src="img/6.jpg" alt="7">
+                <div class="content"></div>
+              
+            </div>
+        </div>
+    </div>
+</section>
+<!--Revires-->
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<section class="products" id="products">
+    <div class="heading">
+        <h1>Products </h1>
+    </div>
+<div class="container">
+    <div class="card">
+        <img src="img/3.jpg" alt="Stussy">
+        <h2>Stussy Stock Sweater Black</h2>
+        <p>Stussy</p>
+        <p class="price">฿19,900</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="card">
+        <img src="img/4.jpg" alt="Stussy">
+        <h2>Stussy Block Sport Pigment Dyed Hoodie</h2>
+        <p>Stussy</p>
+        <p class="price">฿8,893</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="card">
+        <img src="img/6.jpg" alt="Stussy">
+        <h2>Stussy x Nike Icon Knit Sweater Natural</h2>
+        <p>Stussy</p>
+        <p class="price">฿13,800</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="card">
+        <img src="img/2.jpg" alt="Stussy">
+        <h2>Stussy Thailand Bangkok Chapter 2023 White</h2>
+        <p>Stussy</p>
+        <p class="price">฿19,000</p>
+        <button>Add to Cart</button>
+    </div>
+</div>
+
+<div class="huo">
+    <form class="reviews" id="reviews">
+        <h1>Reviews</h1>
+        <div class="form-group">
+            <label for="product-name">ชื่อสินค้า</label>
+            <input type="text" id="product-name" placeholder="กรอกชื่อสินค้า" required>
+        </div>
+
+        <div class="form-group">
+            <label for="rating">คะแนนสินค้า</label>
+            <div class="rating">
+                <label><input type="radio" name="rating" value="1"> 1</label>
+                <label><input type="radio" name="rating" value="2"> 2</label>
+                <label><input type="radio" name="rating" value="3"> 3</label>
+                <label><input type="radio" name="rating" value="4"> 4</label>
+                <label><input type="radio" name="rating" value="5"> 5</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="review">ความคิดเห็น</label>
+            <textarea id="review" rows="5" placeholder="เขียนความคิดเห็นของคุณ..." required></textarea>
+        </div>
+
+        <button type="submit">ส่งรีวิว</button>
+    </form>
+</div>
+
+<div class="hio">
+    <form class="contact" id="contact">
+    <h1>Contact</h1>
+
+    <p><i class='bx bxs-phone-call' ></i>    Tell : 0656787757</p>
+    <p><i class='bx bxl-facebook-circle'></i>Facebook : sureepxrn </p>
+    <p><i class='bx bxs-label' ></i>         Name :sureeporn seeaui </p>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62004.67979515445!2d100.4281181582031!3d13.761227099999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2994444fa24fb%3A0xbcfe8f28f6610e38!2sThe%20Candy%20Shop%20%40%20Asiatique%20the%20Riverfront!5e0!3m2!1sth!2sth!4v1722997953889!5m2!1sth!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+        <!--swiper js-->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--link to js-->
+    <script src="main.js"></script>
+</body>
+</html>
